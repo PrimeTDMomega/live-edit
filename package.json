@@ -1,6 +1,6 @@
 {
   "name": "live-edit",
-  "version": "1.0.0",
+  "version": "1.2.0-DEV",
   "description": "See the output of your markdown live.",
   "main": "main.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "electron-builder": "^24.6.3"
   },
   "build": {
-    "appId": "com.yourcompany.appname",
+    "appId": "me.prime.liveedit",
     "productName": "live-edit",
     "directories": {
       "output": "dist"
