@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap">
+  <title>Markdown Editor</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Comfortaa', sans-serif; /* Use the imported font */
+    }
+    #editor {
+      width: 50%;
+      height: 100%;
+      border: none;
+      padding: 10px;
+      font-family: 'Comfortaa', sans-serif; /* Apply the imported font */
+    }
+    #preview {
+      width: 50%;
+      height: 100%;
+      border: none;
+      padding: 10px;
+      overflow-y: scroll;
+      background-color: #f8f8f8;
+      font-family: 'Comfortaa', sans-serif; /* Apply the imported font */
+    }
+  </style>
+</head>
+<body>
+  <textarea id="editor" placeholder="Type Markdown here..."></textarea>
+  <div id="preview"></div>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it@12/dist/markdown-it.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

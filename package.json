@@ -1,0 +1,33 @@
+{
+  "name": "live-edit",
+  "version": "1.0.0",
+  "description": "See the output of your markdown live.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^16.0.0",
+    "electron-builder": "^24.6.3"
+  },
+  "build": {
+    "appId": "com.yourcompany.appname",
+    "productName": "live-edit",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "path/to/your/icon.ico"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
+  
